@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Sarah Soares </title>
+    <title> Sarah Soares | Portfolio </title>
   </head>
   <body>
 
@@ -24,9 +24,9 @@
 
       <nav class="menu" id="navegacao-primaria">
 
-        <ul aria-label="primaria" role="list">
+        <ul class="cursorEffect" aria-label="primaria" role="list">
 
-          <li class="menu__item"><a href="#"> <span>Quem sou eu?</span> </a></li>
+          <li class="menu__item"><a href="#"> Quem sou eu? </a></li>
           <li class="menu__item"><a href="#"> Habilidades </a></li>
           <li class="menu__item"><a href="#"> Projetos </a></li>
           <li class="menu__item"><a href="#"> Contato </a></li>
@@ -43,8 +43,13 @@
 
     <section class="spacing-6 banner">
 
+      <div class="cursor"></div>
+
       <div class="container-start">
-        <h2 class="h2-50 uppercase"> Sarah Soares </h2>
+
+        <div class="nome__wrapper">        
+          <h2 class="h2-50 uppercase cursorEffect"> Sarah Soares </h2>
+        </div>
 
         <img src="sarah-soares-goncalves-da-silva.jpg" class="banner__photo" 
         alt="Foto de uma mulher branca com cabelo longo castanho e vestindo um blazer azul." 
@@ -69,7 +74,7 @@
 
     <article class="container-social">
 
-      <ul class="social__list">
+      <ul class="social__list cursorEffect">
         <li class="social__icons"> 
           <i class="bi bi-github"></i>
           <a href="#"> Github </a> 
@@ -81,10 +86,6 @@
         <li class="social__icons"> 
           <i class="bi bi-behance"></i>
           <a href="#"> Behance </a> 
-        </li>
-        <li class="social__icons"> 
-          <i class="bi bi-whatsapp"></i>
-          <a href="#"> Whatsapp </a> 
         </li>
       </ul>
 
@@ -271,6 +272,10 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
     crossorigin="anonymous"></script>
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
 
   </body>

@@ -117,6 +117,23 @@ UTILITY CLASSES
   text-decoration: underline wavy #1D5CEB;
 }
 
+
+/* scrollbar estilização */
+::-webkit-scrollbar {
+  width: 2em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: var(--blue-color);
+  border-radius: 50vw;
+
+}
+
 /* ALINHAMENTO / ESPAÇAMENTO */
 
 
@@ -266,7 +283,7 @@ HEADER
 --------------------- */
 
 
-.container-text {
+.container-end {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -626,3 +643,20 @@ GALERIA
 
 }
 
+/* --------------------- 
+
+Footer 
+
+--------------------- */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--light-color);
+  padding: 1rem;
+  border-top: 1px solid var(--dark-color);
+
+}

@@ -54,7 +54,7 @@
 
       </div>
 
-      <div class="container-text">
+      <div class="container-end">
         <h2 class="h2-30 italic underline"> UX/UI Designer </h2>
         <i class="bi bi-code-slash code-bootstrap"></i>
         <h1 class="h2-30 italic underline">Desenvolvedora Front-end</h1>
@@ -95,7 +95,7 @@
       <div class="container-centered">
 
         <h2 class="h2-40 underline"> Quem sou eu? </h2>
-        <p class="p-800s centered p-24"> 
+        <p class="p-800s p-24"> 
           Graduanda em Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia, educação e inovação.
           Meu objetivo é ser uma profissional multipotencial e divulgar o conhecimento do mundo da tecnologia 
           para as pessoas.  
@@ -109,17 +109,12 @@
 
     <section class="spacing-6">
       
-      <div class="container-centered">
-
-        <h2 class="h2-40 underline"> Habilidades </h2>
+      <h2 class="h2-40 underline centered"> Habilidades </h2>
       
-      </div>
-
-          <!--------------------Frontend -------------------->
+      <!--------------------Frontend -------------------->
 
       <div class="container-cards">
 
-        
             <div class="circle">
               <article class="card">
                 <h3>HTML</h3>
@@ -153,6 +148,20 @@
               <article class="card">
                 <h3> BEM CSS </h3>
                 <img src="bem.svg" alt="" class="card__icon-md" srcset="">
+              </article>
+            </div>
+
+            <div class="circle">
+              <article class="card">
+                <h3> GSAP </h3>
+                <img src="gsap-greensock.svg" alt="" class="card__icon-md" srcset="">
+              </article>
+            </div>
+
+            <div class="circle">
+              <article class="card">
+                <h3> jQuery </h3>
+                <img src="jquery-1.svg" alt="" class="card__icon-ml" srcset="">
               </article>
             </div>
 
@@ -223,7 +232,7 @@
               <img src="azure-boards.svg" class="card__icon-md" alt="" srcset="">
             </div>
 
-            <h2> Metodologia Ágil </h2>
+            <h2 class="media__h2"> Metodologia Ágil </h2>
             <p class="media__p"> 
               <strong> Tenho prática com o ciclo de metodologias ágeis </strong>, como Scrum e Kanban, e 
               as seguintes ferramentas usadas: Asana, Azure Boards e Confluence.
@@ -238,25 +247,25 @@
               <img src="ux.png" class="card__icon-md" alt="" srcset="">
             </div>
 
-            <h2> Especializada em UX/UI Design </h2>
+            <h2 class="media__h2"> Especializada em UX </h2>
             <p class="media__p"> 
 
               <strong> Sou especializada em User Experience (Experiência do Usuário) pela Google. </strong>
-              Já conduzi pesquisas, analizei dados e desenvolvi projetos acadêmicos. 
+              Já conduzi pesquisas, analisei dados e desenvolvi projetos acadêmicos. 
               Os melhores projetos são aqueles em que o usuário está no centro. 
 
             </p>
 
           </div>
 
-          <!-- UX Design / Design -->
+          <!-- UI Design -->
           <div class="media__item">
 
             <div class="media__icons">
               <img src="pen-tool.png" class="card__icon-md" alt="" srcset="">
             </div>
 
-            <h2> Estudante ativa de UI Design </h2>
+            <h2 class="media__h2"> Estudante ativa de UI Design </h2>
             <p class="media__p">
               <strong> Tenho conhecimento prático </strong> em Atomic Design, Heuristicas de Nielsen e 
               em outras teorias que ajudam na melhor construção de uma interface para o usuário. Estou
@@ -286,7 +295,7 @@
       
       <div class="gallery">
 
-        <div class="box webdesign">
+        <article class="box webdesign">
 
           <img src="cartaomeupet.svg" alt="" data-item="webdesign">
           <div class="content">
@@ -294,8 +303,9 @@
             <button> Acessar </button>
           </div> 
           
-        </div>
-        <div class="box webdesign">
+        </article>
+
+        <article class="box webdesign">
 
           <img src="lavandablue.svg" alt="" data-item="webdesign">
 
@@ -304,8 +314,9 @@
             <button> Acessar </button>
           </div>
           
-        </div>
-        <div class="box uidesign">
+        </article>
+
+        <article class="box uidesign">
 
           <img src="uidesign.svg" alt="" data-item="uidesign">
 
@@ -314,22 +325,25 @@
             <button> Acessar </button>
           </div>
           
-        </div>
-        <div class="box webdesign">
+        </article>
+
+        <article class="box webdesign">
           <h3>Titulo</h3>
           <img src="vite.svg" alt="" data-item="webdesign">
           <button> Acessar </button>
-        </div>
-        <div class="box webdesign">
+        </article>
+
+        <article class="box webdesign">
           <h3>Titulo</h3>
           <img src="vite.svg" alt="" data-item="webdesign">
           <button> Acessar </button>
-        </div>
-        <div class="box webdesign">
+        </article>
+
+        <article class="box webdesign">
           <h3>Titulo</h3>
           <img src="vite.svg" alt="" data-item="webdesign">
           <button> Acessar </button>
-        </div>
+        </article>
 
       </div>
 
@@ -337,12 +351,53 @@
 
     <!-------------------- Call to Action  -------------------->
     <section class="spacing-6">
-
-
-
-
-
     </section>
+
+    <!-------------------- Footer / Rodapé -------------------->
+    <footer>
+
+      <div class="footer">
+
+        <div class="footer__item">
+
+          <nav>          
+            
+            <ul aria-label="secundario" role="list">
+              <li class="menu__item"><a href="#"> Quem sou eu? </a></li>
+              <li class="menu__item"><a href="#"> Habilidades </a></li>
+              <li class="menu__item"><a href="#"> Projetos </a></li>
+              <li class="menu__item"><a href="#"> Contato </a></li>
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="footer__item">
+
+          <ul class="social__list">
+            <li> 
+              <i class="bi bi-github"></i>
+              <a href="#"> Github </a> 
+            </li>
+            <li> 
+              <i class="bi bi-linkedin"></i>
+              <a href="#"> LinkedIn </a> 
+            </li>
+            <li> 
+              <i class="bi bi-behance"></i>
+              <a href="#"> Behance </a> 
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__copy">
+        <p> Copyright  &copy; 2023 Sarah Soares. Todos os direitos reservados. </p>
+      </div>
+
+    </footer>
 
 
 

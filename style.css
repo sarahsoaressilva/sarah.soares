@@ -7,6 +7,7 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   list-style: none;
+  
 }
 
 :root {
@@ -26,202 +27,8 @@
 
   background-color: var(--light-color);
   scroll-behavior: smooth;
-
-  
-
-}
-
-
-/* --------------------- 
-
-UTILITY CLASSES 
-
---------------------- */
-
-
-/* EFEITO CURSOR AZUL */
-.cursor {
-   position: fixed;
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   border: 2px solid var(--blue-color);
-   transition: transform 2s ease;
-   transform-origin: center center;
-   pointer-events: none;
-   z-index: 1000;
-}
-
-.grow {
-  transform: scale(5);
-  background-color: var(--blue-color);
-  mix-blend-mode: screen;
-}
-
-/* PARAGRAFOS */
-
-.p-18 {
-  font-size: 18px;
-}
-
-.p-24 {
-  font-size: clamp(1.05rem, 2vw, 1.6rem);
-}
-
-/* PARAGRAFOS CONTAINERS */
-
-.p-400s {
-  max-width: 400px;
-}
-
-.p-600s {
-  max-width: 600px;
-}
-
-.p-800s {
-  max-width: 800px;
-}
-
-
-
-/* TITULOS */
-
-
-.h2-30 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  margin: 0;
-
-}
-
-.h2-40 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  margin: 0;
-
-}
-
-.h2-50 {
-  font-size: clamp(3.5rem, 12vw, 6rem);
-  margin: 0;
-}
-
-
-
-/* ESTILIZAÇÃO */
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.underline {
-  text-decoration: underline wavy #1D5CEB;
-}
-
-
-/* scrollbar estilização */
-::-webkit-scrollbar {
-  width: 2em;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--dark-color);
-}
-
-::-webkit-scrollbar-thumb {
-
-  background-color: var(--blue-color);
-  border-radius: 50vw;
-
-}
-
-/* ANIMATIONS - ANIMATE.CSS */
-.fade-left {
-  animation: fadeInLeft;
-  animation-duration: 2s;
-}
-
-.fade-right{
-  animation: fadeInRight;
-  animation-duration: 2s;
-}
-
-.seta-bootstrap:hover {
-  animation: bounce;
-  animation-duration: 1s;
-}
-
-
-/* botão padrão */
-.button {
-
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-
-  position: relative;
-  display: inline-block;
-  padding: 15px;
-
   color: var(--dark-color);
-  font-weight: bold;
-  text-decoration: none;
 
-  background: rgb(116,210,227);
-  background: linear-gradient(90deg, rgba(116,210,227,1) 0%, rgba(134,237,238,1) 49%, rgba(88,129,221,1) 100%);
-
-  transition: all .3s ease-in-out;
-}
-
-
-.button:hover {
-  transform: scale(1.1);
-}
-
-/* ALINHAMENTO / ESPAÇAMENTO */
-
-
-
-.centered {
-  text-align: center;
-}
-
-.spacing-3 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.spacing-6 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-
-/* CONTAINERS */
-
-.container-centered {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-}
-
-.media__scroller {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 40%;
-  gap: 3rem;
-  padding: 2rem;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-}
-
-
-
-/* Caso você parar a scroll bar, ela volta para a borda mais próxima */
-.snap-inline > * {
-  scroll-snap-align: start;
 }
 
 
@@ -473,7 +280,8 @@ CARDS
   font-size: 1rem;
 }
 
-.card h3, p {
+.card h3, 
+.card p {
   margin: 0;
   padding: 1rem;
 }
@@ -530,7 +338,8 @@ DIFERENCIAIS
   padding-bottom: 1rem;
 }
 
-.media__item > h2, p {
+.media__item h2,
+.media__item p {
   text-align: center;
 }
 
@@ -711,3 +520,233 @@ Footer
   border-top: 1px solid var(--dark-color);
 
 }
+
+
+
+/* --------------------- 
+
+UTILITY CLASSES 
+
+--------------------- */
+
+
+/* EFEITO CURSOR AZUL */
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-color);
+  transition: transform 2s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow {
+ transform: scale(5);
+ background-color: var(--blue-color);
+ mix-blend-mode: screen;
+}
+
+/* PARAGRAFOS */
+
+.p-18 {
+ font-size: 18px;
+}
+
+.p-24 {
+ font-size: clamp(1.05rem, 2vw, 1.6rem);
+}
+
+/* PARAGRAFOS CONTAINERS */
+
+.p-400s {
+ max-width: 400px;
+}
+
+.p-600s {
+ max-width: 600px;
+}
+
+.p-800s {
+ max-width: 800px;
+}
+
+
+
+/* TITULOS */
+
+.h2-10 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 0;
+} 
+
+.h2-20 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 0;
+} 
+
+.h2-30 {
+ font-size: clamp(1.5rem, 2vw, 2rem);
+ margin: 0;
+
+}
+
+.h2-40 {
+ font-size: clamp(1.5rem, 2vw, 2rem);
+ margin: 0;
+
+}
+
+.h2-50 {
+ font-size: clamp(3.5rem, 12vw, 6rem);
+ margin: 0;
+}
+
+
+
+/* ESTILIZAÇÃO */
+
+.uppercase {
+ text-transform: uppercase;
+}
+
+.italic {
+ font-style: italic;
+}
+
+.underline {
+ text-decoration: underline wavy #1D5CEB;
+}
+
+.accent {
+  text-decoration: underline #1D5CEB;
+}
+
+
+
+/* scrollbar estilização */
+::-webkit-scrollbar {
+ width: 2em;
+}
+
+::-webkit-scrollbar-track {
+ background-color: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+ background-color: var(--blue-color);
+ border-radius: 50vw;
+
+}
+
+/* ANIMATIONS - ANIMATE.CSS 
+.fade-left {
+ animation: fadeInLeft;
+ animation-duration: 2s;
+}
+
+.fade-right{
+ animation: fadeInRight;
+ animation-duration: 2s;
+}
+
+.seta-bootstrap:hover {
+ animation: bounce;
+ animation-duration: 1s;
+}
+
+*/
+
+
+/* botão padrão */
+.button {
+
+ margin-top: 1rem;
+ padding: 0.5rem 1rem;
+ border-radius: 0.5rem;
+
+ position: relative;
+ display: inline-block;
+ padding: 15px;
+
+ color: var(--dark-color);
+ font-weight: bold;
+ text-decoration: none;
+
+ background: rgb(116,210,227);
+ background: linear-gradient(90deg, rgba(116,210,227,1) 0%, rgba(134,237,238,1) 49%, rgba(88,129,221,1) 100%);
+
+ transition: all .3s ease-in-out;
+}
+
+
+.button:hover {
+ transform: scale(1.1);
+}
+
+/* ALINHAMENTO / ESPAÇAMENTO */
+
+.centered {
+ text-align: center;
+}
+
+
+.start {
+  text-align: start;
+ }
+
+.spacing-3 {
+ padding-top: 3rem;
+ padding-bottom: 3rem;
+}
+
+.spacing-6 {
+ padding-top: 6rem;
+ padding-bottom: 6rem;
+}
+
+
+/* CONTAINERS */
+
+.container-centered {
+ display: grid;
+ grid-template-columns: 1fr;
+ place-items: center;
+}
+
+.media__scroller {
+ display: grid;
+ grid-auto-flow: column;
+ grid-auto-columns: 40%;
+ gap: 3rem;
+ padding: 2rem;
+ overflow-x: auto;
+ overscroll-behavior-inline: contain;
+}
+
+.container {
+ 
+  display: flex;
+  flex-direction: row-reverse; 
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+
+  background-color: #FAFAFA;
+  border-radius: 1rem;
+
+  padding: 1rem;
+  margin-top: 1rem;
+
+}
+
+.container article {
+  max-width: 600px;
+}
+
+
+

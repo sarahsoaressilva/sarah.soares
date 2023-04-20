@@ -24,15 +24,18 @@
 
       <nav class="menu" id="navegacao-primaria">
 
-        <ul class="cursorEffect" aria-label="primaria" role="list">
+        <ul aria-label="primaria" role="list">
 
           <li class="menu__item"><a href="#"> Quem sou eu? </a></li>
           <li class="menu__item"><a href="#"> Habilidades </a></li>
           <li class="menu__item"><a href="#"> Projetos </a></li>
           <li class="menu__item"><a href="#"> Contato </a></li>
-          <li class="menu__item"><a href="#"> AREA DE MUDANÇA DAS BANDEIRAS </a></li>
+          <div id="google_translate_element"></div>
 
         </ul>
+
+        
+        
 
       </nav>
 
@@ -340,7 +343,7 @@
 
           <div class="overlay">
             <h3 class="box__title">
-              Pocket - UX/UI Design
+              Pocket - UX/UI Design (UX Case)
             </h3>
             <ul class="container__list-aligned">
               <li> <img src="figma-icon.svg" class="card__icon-md" alt="" srcset=""> </li>
@@ -384,6 +387,25 @@
               <li> <img src="elementor-icon.svg" class="card__icon-md" alt="" srcset=""> </li>
             </ul>
             <a href="#" role="button" class="button"> 
+              Acessar 
+            </a>
+          </div> 
+          
+        </article>
+
+        <article class="box webdesign">
+
+          <img src="nws-exibicao.svg" alt="">
+
+          <div class="overlay">
+            <h3 class="box__title">
+              Network System - Site Institucional (cliente real)
+            </h3>
+            <ul class="container__list-aligned">
+              <li> <img src="wordpress-blue.svg" class="card__icon-md" alt="" srcset=""> </li>
+              <li> <img src="elementor-icon.svg" class="card__icon-md" alt="" srcset=""> </li>
+            </ul>
+            <a href="https://www.nwseletrica.com.br/" target="_blank" role="button" class="button"> 
               Acessar 
             </a>
           </div> 
@@ -438,9 +460,9 @@
 
       </div>
 
-      <div class="footer__copy">
+      <!-- <div class="footer__copy">
         <p> Copyright  &copy; 2023 Sarah Soares. Todos os direitos reservados. </p>
-      </div>
+      </div> -->
 
     </footer>
 
@@ -449,10 +471,23 @@
     <!-- Modulo de inicialização Javascript -->
     <script type="module" src="/main.js"></script>
 
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
     crossorigin="anonymous"></script>
+
+    <!-- Google Translate API -->
+    <script type="text/javascript">
+    
+      function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'pt', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
     <!-- GSAP -->

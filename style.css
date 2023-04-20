@@ -193,13 +193,12 @@ UTILITY CLASSES
   grid-auto-flow: column;
   grid-auto-columns: 40%;
   gap: 3rem;
+  padding: 2rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
 
-.snap-inline {
-  scroll-snap-type: inline mandatory;
-}
+
 
 /* Caso você parar a scroll bar, ela volta para a borda mais próxima */
 .snap-inline > * {
@@ -230,7 +229,7 @@ CABEÇALHO
   font-weight: 700;
   text-transform: uppercase;
 
-  padding-right: 30px;
+  padding-right: 1rem;
 
 }
 
@@ -505,6 +504,11 @@ DIFERENCIAIS
   justify-content: center;
   
   padding: 3rem;
+  border: 2px solid var(--dark-color);
+
+  border-end-end-radius: 3rem;
+  border-start-start-radius: 3rem;
+  
 }
 
  @media (max-width: 57rem) {
